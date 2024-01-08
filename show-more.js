@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="extend-for-more">
                     <span>Show More</span> 
                     <div class="show-more-arrow">
-                        <img src="arrow-down-svgrepo-com.svg" alt="">
+                        <img src="https://playshaban.github.io/Travelopia/arrow-down-svgrepo-com.svg" alt="">
                     </div>
                 </div>
             `;
