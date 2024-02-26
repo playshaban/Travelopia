@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaban Test Work</title>
     <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            Shaban 
+            Shaban
         </div>
         <div class="open__nav" onclick="openNav()">
-            <img src="open__nav.svg"> 
+            <img src="open__nav.svg">
         </div>
         <nav>
             <div class="close__nav" onclick="closeNav()">X</div>
@@ -28,10 +30,13 @@
             <source media="(max-width: 768px)" srcset="mountain-tab.jpeg">
             <source media="(min-width: 769px)" srcset="mountain.jpeg">
             <img src="" width="100%" alt="">
-          </picture>
+        </picture>
         <div class="main__info">
-                <h1>Explore The World</h1>
-                <a href="#" class="main__button">Click Here</a>
+            <h1>Explore The World</h1>
+            <a href="#" class="main__button" onclick="showAlert()">Click Here</a>
+        </div>
+        <div class="main__info alert__box">
+            <h1>Hello World</h1>
         </div>
     </div>
     <footer>
@@ -47,19 +52,9 @@
             <a href="">About</a>
             <a href="">Help</a>
         </div>
-        
-    </footer>
-    <script>
-        const nav = document.querySelector('nav');
 
-        function openNav()
-        {
-            nav.classList.add("active");
-        }
-        function closeNav()
-        {
-            nav.classList.remove("active");
-        }
-    </script>
+    </footer>
+    <script src="index.js" defer></script>
 </body>
+
 </html>
