@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaban Test Work</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Shaban 
+        </div>
+        <div class="open__nav" onclick="openNav()">
+            <img src="open__nav.svg"> 
+        </div>
+        <nav>
+            <div class="close__nav" onclick="closeNav()">X</div>
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="">Help</a>
+        </nav>
+    </header>
+    <div class="main--container">
+        <picture>
+            <source media="(max-width: 600px)" srcset="mountain-mobile.jpeg">
+            <source media="(max-width: 768px)" srcset="mountain-tab.jpeg">
+            <source media="(min-width: 769px)" srcset="mountain.jpeg">
+            <img src="" width="100%" alt="">
+          </picture>
+        <div class="main__info">
+                <h1>Explore The World</h1>
+                <a href="#" class="main__button">Click Here</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__logo">
+            Shaban
+        </div>
+        <div class="footer__description">
+            Developed By <a>Shaban khan</a>
+        </div>
+        <div class="footer__links">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="">Help</a>
+        </div>
+        
+    </footer>
+    <script>
+        const nav = document.querySelector('nav');
+
+        function openNav()
+        {
+            nav.classList.add("active");
+        }
+        function closeNav()
+        {
+            nav.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
